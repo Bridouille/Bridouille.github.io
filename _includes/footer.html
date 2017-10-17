@@ -1,0 +1,10 @@
+<footer class="c-footer">
+  <div class="u-container c-footer__container">
+    <p>&copy; {{ site.title }} {{ site.time | date: '%Y' }}</p>
+    <p>
+      {% if site.githubUsername %}<a href="https://github.com/{{ site.githubUsername }}">Github</a>{% endif %}
+      {% if site.linkedinUsername %}<a href="https://www.linkedin.com/in/{{ site.linkedinUsername }}">LinkedIn</a>{% endif %}
+      {% if site.playstoreUsername %}<a href="https://play.google.com/store/apps/developer?id={{ site.playstoreUsername | uri_escape }}">Play store apps</a>{% endif %}
+    </p>
+  </div>
+</footer>
