@@ -1,23 +1,5 @@
-# material-jekyll-theme
-[Demo](http://alexcarpenter.github.io/material-jekyll-theme)
+# bridouille.github.io
 
-![Material Jekyll Theme](https://d13yacurqjgara.cloudfront.net/users/37718/screenshots/2430279/slice_1.jpg)
-
-## Getting started
-1. `git clone https://github.com/alexcarpenter/material-jekyll-theme.git`
-2. `cd material-jekyll-theme`
-3. Configure the `_config.yml` file as needed
-4. `jekyll serve`
-
-## Options
-Customize your options within the `_config.yml` file.
-
-+ Theme
-  - Green
-  - Blue
-  - Orange
-  - Purple
-  - Grey
-+ Fixed Navigation
-  - True
-  - False
+- To add a new page: add it in the "_pages" folder, also update the _includes navigation
+- Just push to this repo, will update in a few minutes
+- Everything is static and accessible from everywhere
