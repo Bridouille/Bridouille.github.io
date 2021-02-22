@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Flight manager Privacy Policy
+title: Swedish practice Privacy Policy
 permalink: /swedish-practice-privacy-policy/
 ---
 
