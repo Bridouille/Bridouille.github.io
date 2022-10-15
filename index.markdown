@@ -6,7 +6,7 @@ I'm a French Android Engineer currently living in Stockholm and working at [Spot
 
 I enjoy working on the Android ecosystem and creating new apps. What I love the most is the learning experience I get in the process of building something new, something that I never really worked on before, something unique. Also working on a paltform that is used everyday by billions of users (including myself) is very motivating.
 
-I have been doing Android development for more than 4 years now and released **[a few apps](https://play.google.com/store/apps/developer?id=Nicolas%20Bridoux&hl=en)**.Some of them are [open source](https://github.com/Bridouille).
+I have been doing Android development for more than 4 years now and released **[a few apps](https://play.google.com/store/apps/developer?id=Studio%20Bridoux%20AB&hl=en)**.Some of them are [open source](https://github.com/Bridouille).
 
 My main languages are `Kotlin` and `Java`, but I have some knowledge in low level programming (`C`, `Go`).
 
