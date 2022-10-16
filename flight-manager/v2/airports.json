@@ -25697,6 +25697,13 @@
         "tz": "Asia/Riyadh"
     },
     {
+        "iata": "ULH",
+        "name": "Prince Abdul Majeed bin Abdulaziz International Airport",
+        "lat": 26.483333,
+        "lon": 38.116944,
+        "tz": "Asia/Riyadh"
+    },
+    {
         "iata": "ABT",
         "name": "Al Baha Airport",
         "lat": 20.2961006165,
@@ -30987,6 +30994,13 @@
         "lat": -1.4141600132,
         "lon": -48.4607009888,
         "tz": "America/Belem"
+    },
+    {
+        "iata": "JJD",
+        "name": "Comte. Ariston Pessoa Regional Airport",
+        "lat": -2.906667,
+        "lon": -40.358056,
+        "tz": "America/Fortaleza"
     },
     {
         "iata": "JDF",
@@ -38311,6 +38325,13 @@
         "tz": "Asia/Kolkata"
     },
     {
+        "iata": "SAG",
+        "name": "Shirdi Airport",
+        "lat": 19.688611,
+        "lon": 74.378889,
+        "tz": "Asia/Kolkata"
+    },
+    {
         "iata": "SSE",
         "name": "Solapur Airport",
         "lat": 17.6280002594,
@@ -42879,6 +42900,13 @@
         "name": "Cue Airport",
         "lat": -27.4466991425,
         "lon": 117.9179992676,
+        "tz": "Australia/Perth"
+    },
+    {
+        "iata": "CJF",
+        "name": "Coondewanna Wa Airport",
+        "lat": -22.966667,
+        "lon": 118.802222,
         "tz": "Australia/Perth"
     },
     {
