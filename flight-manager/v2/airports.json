@@ -19992,7 +19992,7 @@
         "tz": "Europe/Paris"
     },
     {
-        "iata": "XHE",
+        "iata": "TLN",
         "name": "Toulon-Hyeres Airport",
         "lat": 43.0973014832,
         "lon": 6.1460299492,
@@ -38563,6 +38563,13 @@
         "tz": "Asia/Kolkata"
     },
     {
+        "iata": "DGH",
+        "name": "Deoghar Airport",
+        "lat": 24.444722,
+        "lon": 86.7025,
+        "tz": "Asia/Kolkata"
+    },
+    {
         "iata": "DAE",
         "name": "Daporijo Airport",
         "lat": 27.9855003357,
@@ -38595,6 +38602,13 @@
         "name": "Imphal Airport",
         "lat": 24.7600002289,
         "lon": 93.896697998,
+        "tz": "Asia/Kolkata"
+    },
+    {
+        "iata": "JRG",
+        "name": "Jharsuguda Airport",
+        "lat": 21.9134998322,
+        "lon": 84.0503997803,
         "tz": "Asia/Kolkata"
     },
     {
@@ -40556,6 +40570,13 @@
         "lat": -9.6692199707,
         "lon": 120.302001953,
         "tz": "Asia/Makassar"
+    },
+    {
+        "iata": "YIA",
+        "name": "Yogyakarta International Airport",
+        "lat": -7.907459,
+        "lon": 110.05448,
+        "tz": "Asia/Jakarta"
     },
     {
         "iata": "ARJ",
