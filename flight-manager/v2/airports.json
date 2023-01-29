@@ -12271,6 +12271,13 @@
         "tz": "Africa/Addis_Ababa"
     },
     {
+        "iata": "JIJ",
+        "name": "Jijiga Airport",
+        "lat": 9.330833,
+        "lon": 42.911111,
+        "tz": "Africa/Addis_Ababa"
+    },
+    {
         "iata": "JIM",
         "name": "Jimma Airport",
         "lat": 7.6660900116,
@@ -14155,7 +14162,7 @@
     },
     {
         "iata": "ATW",
-        "name": "Outagamie County Regional Airport",
+        "name": "Appleton International Airport",
         "lat": 44.2580986023,
         "lon": -88.5190963745,
         "tz": "America/Chicago"
@@ -18151,6 +18158,13 @@
         "tz": "America/Denver"
     },
     {
+        "iata": "THM",
+        "name": "Thompson Falls Airport",
+        "lat": 47.5735015869,
+        "lon": -115.28099823,
+        "tz": "America/Denver"
+    },
+    {
         "iata": "TLH",
         "name": "Tallahassee Regional Airport",
         "lat": 30.3964996338,
@@ -21896,6 +21910,13 @@
         "tz": "Europe/Istanbul"
     },
     {
+        "iata": "YKO",
+        "name": "Hakkari Yuksekova Airport",
+        "lat": 37.551667,
+        "lon": 44.233611,
+        "tz": "Europe/Istanbul"
+    },
+    {
         "iata": "HTY",
         "name": "Hatay Airport",
         "lat": 36.36277771,
@@ -23044,6 +23065,13 @@
         "tz": "America/Tijuana"
     },
     {
+        "iata": "NLU",
+        "name": "Felipe Angeles International Airport",
+        "lat": 19.756667,
+        "lon": -99.015278,
+        "tz": "America/Mexico_City"
+    },
+    {
         "iata": "SLP",
         "name": "Ponciano Arriaga International Airport",
         "lat": 22.2542991638,
@@ -23286,6 +23314,13 @@
         "name": "Howard/Panama Pacifico International Airport",
         "lat": 8.9147901535,
         "lon": -79.5996017456,
+        "tz": "America/Panama"
+    },
+    {
+        "iata": "RIH",
+        "name": "Scarlett Martinez International Airport",
+        "lat": 8.375833,
+        "lon": -80.127778,
         "tz": "America/Panama"
     },
     {
@@ -26398,7 +26433,7 @@
     },
     {
         "iata": "AZI",
-        "name": "Bateen Airport",
+        "name": "Al Bateen Executive Airport",
         "lat": 24.4283008575,
         "lon": 54.4580993652,
         "tz": "Asia/Dubai"
@@ -33019,6 +33054,13 @@
         "tz": "America/Bogota"
     },
     {
+        "iata": "RVE",
+        "name": "Los Colonizadores Airport",
+        "lat": 6.951389,
+        "lon": -71.856944,
+        "tz": "America/Bogota"
+    },
+    {
         "iata": "SJE",
         "name": "Jorge E. Gonzalez Torres Airport",
         "lat": 2.57969,
@@ -33128,6 +33170,13 @@
         "name": "Urrao Airport",
         "lat": 6.32883,
         "lon": -76.1425,
+        "tz": "America/Bogota"
+    },
+    {
+        "iata": "VGZ",
+        "name": "Villa Garzon Airport",
+        "lat": 0.981944,
+        "lon": -76.604167,
         "tz": "America/Bogota"
     },
     {
@@ -36442,10 +36491,10 @@
         "tz": "Asia/Almaty"
     },
     {
-        "iata": "DLX",
-        "name": "Semipalatinsk Airport",
-        "lat": 50.3512992859,
-        "lon": 80.2343978882,
+        "iata": "PLX",
+        "name": "Semey Airport",
+        "lat": 50.351389,
+        "lon": 80.234444,
         "tz": "Asia/Almaty"
     },
     {
@@ -38066,6 +38115,13 @@
         "tz": "Europe/Saratov"
     },
     {
+        "iata": "GSV",
+        "name": "Saratov Gagarin Airport",
+        "lat": 51.712778,
+        "lon": 46.171111,
+        "tz": "Europe/Saratov"
+    },
+    {
         "iata": "RTW",
         "name": "Saratov Central Airport",
         "lat": 51.5649986267,
@@ -38491,6 +38547,13 @@
         "lat": 10.57970047,
         "lon": 103.637001038,
         "tz": "Asia/Phnom_Penh"
+    },
+    {
+        "iata": "DBR",
+        "name": "Darbhanga Airport",
+        "lat": 26.194722,
+        "lon": 85.9175,
+        "tz": "Asia/Kolkata"
     },
     {
         "iata": "IXV",
@@ -39436,6 +39499,13 @@
         "lat": 26.4815006256,
         "lon": 87.263999939,
         "tz": "Asia/Kathmandu"
+    },
+    {
+        "iata": "TCR",
+        "name": "Tuticorin Airport",
+        "lat": 8.724167,
+        "lon": 78.025833,
+        "tz": "Asia/Kolkata"
     },
     {
         "iata": "AGX",
@@ -40733,10 +40803,10 @@
         "tz": "Asia/Makassar"
     },
     {
-        "iata": "SRI",
-        "name": "Temindung Airport",
-        "lat": -0.4845309854,
-        "lon": 117.1569976807,
+        "iata": "AAP",
+        "name": "Aji Pangeran Tumenggung Pranoto International Airport",
+        "lat": -0.373611,
+        "lon": 117.255556,
         "tz": "Asia/Makassar"
     },
     {
@@ -41636,6 +41706,13 @@
         "tz": "Asia/Jakarta"
     },
     {
+        "iata": "DTB",
+        "name": "Sisingamangaraja XII International Airport",
+        "lat": 2.259722,
+        "lon": 98.995278,
+        "tz": "Asia/Jakarta"
+    },
+    {
         "iata": "FLZ",
         "name": "Dr Ferdinand Lumban Tobing Airport",
         "lat": 1.555940032,
@@ -42355,6 +42432,13 @@
         "lat": -25.6417007446,
         "lon": 140.7830047607,
         "tz": "Australia/Brisbane"
+    },
+    {
+        "iata": "OCM",
+        "name": "Boolgeeda Airport",
+        "lat": -22.54,
+        "lon": 117.275,
+        "tz": "Australia/Perth"
     },
     {
         "iata": "BQW",
@@ -45465,6 +45549,13 @@
         "tz": "Asia/Shanghai"
     },
     {
+        "iata": "PKX",
+        "name": "Beijing Daxing International Airport",
+        "lat": 39.509167,
+        "lon": 116.410556,
+        "tz": "Asia/Shanghai"
+    },
+    {
         "iata": "CIF",
         "name": "Chifeng Airport",
         "lat": 42.2350006104,
@@ -46337,6 +46428,13 @@
         "name": "Lianshui Airport",
         "lat": 33.7908333333,
         "lon": 119.125,
+        "tz": "Asia/Shanghai"
+    },
+    {
+        "iata": "SQJ",
+        "name": "Sanming Shaxian Airport",
+        "lat": 26.428056,
+        "lon": 117.845,
         "tz": "Asia/Shanghai"
     },
     {
