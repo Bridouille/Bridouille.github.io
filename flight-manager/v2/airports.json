@@ -5440,7 +5440,7 @@
     },
     {
         "iata": "FLF",
-        "name": "Flensburg-Schaferhaus Airport",
+        "name": "Flensburg-Schaeferhaus Airport",
         "lat": 54.7733345032,
         "lon": 9.3788890839,
         "tz": "Europe/Berlin"
@@ -20983,14 +20983,21 @@
         "name": "Eilat Airport",
         "lat": 29.5613002777,
         "lon": 34.9600982666,
-        "tz": "Asia/Amman"
+        "tz": "Asia/Jerusalem"
+    },
+    {
+        "iata": "ETM",
+        "name": "Ramon Airport",
+        "lat": 29.723694,
+        "lon": 35.011417,
+        "tz": "Asia/Jerusalem"
     },
     {
         "iata": "EIY",
         "name": "Ein Yahav Airfield",
         "lat": 30.6217002869,
         "lon": 35.2033004761,
-        "tz": "Asia/Amman"
+        "tz": "Asia/Jerusalem"
     },
     {
         "iata": "HFA",
@@ -36540,7 +36547,7 @@
         "tz": "Asia/Baku"
     },
     {
-        "iata": "KVD",
+        "iata": "GNJ",
         "name": "Ganja Airport",
         "lat": 40.737701416,
         "lon": 46.3176002502,
