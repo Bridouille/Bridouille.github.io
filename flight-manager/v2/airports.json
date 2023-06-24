@@ -7441,6 +7441,13 @@
         "tz": "Europe/Warsaw"
     },
     {
+        "iata": "RDO",
+        "name": "Warsaw-Radom Airport",
+        "lat": 51.3891983032,
+        "lon": 21.213300705,
+        "tz": "Europe/Warsaw"
+    },
+    {
         "iata": "CZW",
         "name": "Czestochowa-Rudniki Airport",
         "lat": 50.886133,
@@ -12348,10 +12355,24 @@
         "tz": "Africa/Addis_Ababa"
     },
     {
+        "iata": "SHC",
+        "name": "Shire Airport",
+        "lat": 14.079444,
+        "lon": 38.270833,
+        "tz": "Africa/Addis_Ababa"
+    },
+    {
         "iata": "SXU",
         "name": "Soddu Airport",
         "lat": 6.8169999123,
         "lon": 37.75,
+        "tz": "Africa/Addis_Ababa"
+    },
+    {
+        "iata": "SZE",
+        "name": "Semera Airport",
+        "lat": 11.7875,
+        "lon": 40.991667,
         "tz": "Africa/Addis_Ababa"
     },
     {
@@ -30590,6 +30611,13 @@
         "tz": "America/Araguaina"
     },
     {
+        "iata": "JTC",
+        "name": "Bauru-Arealva Airport",
+        "lat": -22.15778,
+        "lon": -49.06833,
+        "tz": "America/Sao_Paulo"
+    },
+    {
         "iata": "0",
         "name": "Campo Delio Jardim de Mattos Airport",
         "lat": -22.8750991821,
@@ -36666,6 +36694,13 @@
         "tz": "Asia/Yakutsk"
     },
     {
+        "iata": "BGN",
+        "name": "Belaya Gora Airport",
+        "lat": 68.556944,
+        "lon": 146.234722,
+        "tz": "Asia/Magadan"
+    },
+    {
         "iata": "CKH",
         "name": "Chokurdakh Airport",
         "lat": 70.6231002808,
@@ -37132,6 +37167,13 @@
         "name": "Talagi Airport",
         "lat": 64.6003036499,
         "lon": 40.7167015076,
+        "tz": "Europe/Moscow"
+    },
+    {
+        "iata": "VKV",
+        "name": "Vaskovo Airport",
+        "lat": 64.4417037964,
+        "lon": 40.4216995239,
         "tz": "Europe/Moscow"
     },
     {
@@ -38493,6 +38535,13 @@
         "tz": "Asia/Colombo"
     },
     {
+        "iata": "HRI",
+        "name": "Mattala Rajapaksa International Airport",
+        "lat": 6.288889,
+        "lon": 81.123611,
+        "tz": "Asia/Colombo"
+    },
+    {
         "iata": "BBM",
         "name": "Battambang Airport",
         "lat": 13.0956001282,
@@ -39702,6 +39751,13 @@
         "lat": 27.4032001495,
         "lon": 89.4245986938,
         "tz": "Asia/Thimphu"
+    },
+    {
+        "iata": "HDK",
+        "name": "Kulhudhuffushi Airport",
+        "lat": 6.631111,
+        "lon": 73.066667,
+        "tz": "Indian/Maldives"
     },
     {
         "iata": "IFU",
@@ -41269,6 +41325,13 @@
         "name": "Andi Jemma Airport",
         "lat": -2.5580399036,
         "lon": 120.3239974976,
+        "tz": "Asia/Makassar"
+    },
+    {
+        "iata": "KXB",
+        "name": "Sangia Nibandera Airport",
+        "lat": -4.341217,
+        "lon": 121.523983,
         "tz": "Asia/Makassar"
     },
     {
@@ -46123,6 +46186,13 @@
         "tz": "Asia/Choibalsan"
     },
     {
+        "iata": "UBN",
+        "name": "Chinggis Khaan International Airport",
+        "lat": 47.651581,
+        "lon": 106.821772,
+        "tz": "Asia/Ulaanbaatar"
+    },
+    {
         "iata": "DLZ",
         "name": "Dalanzadgad Airport",
         "lat": 43.5917015076,
@@ -46652,6 +46722,13 @@
         "name": "Tengchong Tuofeng Airport",
         "lat": 24.9380555556,
         "lon": 98.4858333333,
+        "tz": "Asia/Shanghai"
+    },
+    {
+        "iata": "TFU",
+        "name": "Chengdu Tianfu International Airport",
+        "lat": 30.319,
+        "lon": 104.445,
         "tz": "Asia/Shanghai"
     },
     {
