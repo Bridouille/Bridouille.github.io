@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Flight manager Privacy Policy
-permalink: /flight-manager-privacy-policy/
+title: Crossfit timer Privacy Policy
+permalink: /crossfit-timer-privacy-policy/
 ---
 
-## Flight manager Privacy Policy ##
+## Crossfit timer Privacy Policy ##
 
  - All the data is stored on the Phone itself (meaning if you change phone or uninstall/reinstall the app, everything would have to be re-imported), <b>nothing is stored on any server</b>.
  - The Google Play Store handles the fact that you have removed the ads or not, so if you change phone it will be synced across devices.
