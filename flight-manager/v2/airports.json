@@ -26692,7 +26692,7 @@
     },
     {
         "iata": "BUD",
-        "name": "Budapest Liszt Ferenc International Airport",
+        "name": "Budapest Ferenc Liszt International Airport",
         "lat": 47.4369010925,
         "lon": 19.2555999756,
         "tz": "Europe/Budapest"
@@ -27301,7 +27301,7 @@
     },
     {
         "iata": "PRG",
-        "name": "Ruzyne International Airport",
+        "name": "Vaclav Havel Airport",
         "lat": 50.1007995605,
         "lon": 14.2600002289,
         "tz": "Europe/Prague"
@@ -47303,6 +47303,13 @@
         "name": "Vijayanagar Aerodrome (JSW)",
         "lat": 15.1749666667,
         "lon": 76.6349472222,
+        "tz": "Asia/Kolkata"
+    },
+    {
+        "iata": "CNN",
+        "name": "Kannur International Airport",
+        "lat": 11.92,
+        "lon": 75.55,
         "tz": "Asia/Kolkata"
     },
     {
