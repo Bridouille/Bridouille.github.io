@@ -4977,13 +4977,6 @@
         "tz": "Africa/Lagos"
     },
     {
-        "iata": "NBE",
-        "name": "Enfidha Zine El Abidine Ben Ali International Airport",
-        "lat": 36.075833,
-        "lon": 10.438611,
-        "tz": "Africa/Tunis"
-    },
-    {
         "iata": "YOL",
         "name": "Yola Airport",
         "lat": 9.2575502396,
@@ -5051,6 +5044,13 @@
         "name": "Monastir Habib Bourguiba International Airport",
         "lat": 35.7580986023,
         "lon": 10.754699707,
+        "tz": "Africa/Tunis"
+    },
+    {
+        "iata": "NBE",
+        "name": "Enfidha - Hammamet International Airport",
+        "lat": 36.075833,
+        "lon": 10.438611,
         "tz": "Africa/Tunis"
     },
     {
@@ -27818,13 +27818,6 @@
         "tz": "Europe/Lisbon"
     },
     {
-        "iata": "COV",
-        "name": "Covilha Airport",
-        "lat": 40.2648010254,
-        "lon": -7.4799599648,
-        "tz": "Europe/Lisbon"
-    },
-    {
         "iata": "FLW",
         "name": "Flores Airport",
         "lat": 39.4552993774,
@@ -28130,6 +28123,13 @@
         "name": "Interlaken Air Base",
         "lat": 46.6766014099,
         "lon": 7.8790798187,
+        "tz": "Europe/Zurich"
+    },
+    {
+        "iata": "VIP",
+        "name": "Payerne Airport",
+        "lat": 46.84674595816998,
+        "lon": 6.920598655936771,
         "tz": "Europe/Zurich"
     },
     {
@@ -28585,6 +28585,13 @@
         "name": "Hatay Airport",
         "lat": 36.36277771,
         "lon": 36.2822227478,
+        "tz": "Europe/Istanbul"
+    },
+    {
+        "iata": "COV",
+        "name": "\u00c7ukurova International Airport",
+        "lat": 36.892916,
+        "lon": 35.071971,
         "tz": "Europe/Istanbul"
     },
     {
@@ -43435,6 +43442,13 @@
         "tz": "America/Tortola"
     },
     {
+        "iata": "SVD",
+        "name": "Argyle International Airport",
+        "lat": 13.1626683736,
+        "lon": -61.15137008,
+        "tz": "America/St_Vincent"
+    },
+    {
         "iata": "BQU",
         "name": "J F Mitchell Airport",
         "lat": 12.9884004593,
@@ -43460,13 +43474,6 @@
         "name": "Union Island International Airport",
         "lat": 12.6001348495,
         "lon": -61.411945343,
-        "tz": "America/St_Vincent"
-    },
-    {
-        "iata": "SVD",
-        "name": "E. T. Joshua Airport",
-        "lat": 13.1443004608,
-        "lon": -61.210899353,
         "tz": "America/St_Vincent"
     },
     {
