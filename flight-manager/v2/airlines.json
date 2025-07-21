@@ -1,8 +1,8 @@
 [
     {
         "iata": "0B",
-        "icao": "BMS",
-        "name": "Blue Air"
+        "icao": "BBL",
+        "name": "BBN Airlines"
     },
     {
         "iata": "G6",
@@ -342,8 +342,8 @@
     },
     {
         "iata": "4O",
-        "icao": "AIJ",
-        "name": "Interjet"
+        "icao": "MNE",
+        "name": "Air Montenegro"
     },
     {
         "iata": "4P",
@@ -1279,8 +1279,8 @@
     },
     {
         "iata": "B5",
-        "icao": "EXZ",
-        "name": "Fly SAX"
+        "icao": "BBT",
+        "name": "BBN Airlines Türkiye"
     },
     {
         "iata": "B6",
@@ -1458,8 +1458,8 @@
     },
     {
         "iata": "LL",
-        "icao": "BSK",
-        "name": "Miami Air International"
+        "icao": "LVL",
+        "name": "Level"
     },
     {
         "iata": "5B",
@@ -1546,8 +1546,8 @@
     },
     {
         "iata": "C8",
-        "icao": "ICV",
-        "name": "Cargolux Italia"
+        "icao": "CRA",
+        "name": "Cronos Airlines"
     },
     {
         "iata": "CA",
@@ -2218,8 +2218,8 @@
     },
     {
         "iata": "FS",
-        "icao": "FGG",
-        "name": "flyglobal charter"
+        "icao": "AYN",
+        "name": "FlyArystan"
     },
     {
         "iata": "6K",
@@ -2721,13 +2721,8 @@
     },
     {
         "iata": "HN",
-        "icao": "AJA",
-        "name": "Afghan Jet International"
-    },
-    {
-        "iata": "HN",
-        "icao": "HVY",
-        "name": "Heavylift Cargo"
+        "icao": "HST",
+        "name": "Heston Airlines"
     },
     {
         "iata": "HO",
@@ -3522,11 +3517,8 @@
     },
     {
         "iata": "LE",
-        "name": "Laparkan Airways"
-    },
-    {
-        "iata": "LE",
-        "name": "Lion Air Cargo"
+        "icao": "STB",
+        "name": "St Barth Executive"
     },
     {
         "iata": "LG",
@@ -3964,8 +3956,8 @@
     },
     {
         "iata": "N9",
-        "icao": "QNK",
-        "name": "Kabo Air"
+        "icao": "SHA",
+        "name": "Shree Airlines"
     },
     {
         "iata": "NA",
@@ -4101,11 +4093,6 @@
         "iata": "NU",
         "icao": "JTA",
         "name": "Japan Transocean Air"
-    },
-    {
-        "iata": "N9",
-        "icao": "NVR",
-        "name": "Novair"
     },
     {
         "iata": "NX",
@@ -5673,13 +5660,8 @@
     },
     {
         "iata": "UN",
-        "icao": "TSO",
-        "name": "Transaero Airlines"
-    },
-    {
-        "iata": "UN",
         "icao": "UNA",
-        "name": "Business Aviation Asia"
+        "name": "United Nigeria Airlines"
     },
     {
         "iata": "UO",
@@ -6260,8 +6242,8 @@
     },
     {
         "iata": "XN",
-        "icao": "XAR",
-        "name": "Xpressair"
+        "icao": "MXA",
+        "name": "Mexicana de Aviación"
     },
     {
         "iata": "XO",
