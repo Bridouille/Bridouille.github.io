@@ -361,8 +361,8 @@
     },
     {
         "iata": "4S",
-        "icao": "OLC",
-        "name": "Solar Cargo"
+        "icao": "RSX",
+        "name": "Red Sea Airlines"
     },
     {
         "iata": "4T",
@@ -376,8 +376,8 @@
     },
     {
         "iata": "4V",
-        "icao": "LCG",
-        "name": "Lignes Aeriennes Congolaises"
+        "icao": "SQY",
+        "name": "SkyUp Nistru"
     },
     {
         "iata": "4W",
@@ -441,7 +441,8 @@
     },
     {
         "iata": "5L",
-        "name": "Fly Salone"
+        "icao": "GAO",
+        "name": "Liat Air"
     },
     {
         "iata": "5M",
@@ -610,7 +611,7 @@
     {
         "iata": "MY",
         "icao": "MWG",
-        "name": "MASwings"
+        "name": "AirBorneo"
     },
     {
         "iata": "7C",
@@ -684,8 +685,8 @@
     },
     {
         "iata": "7Q",
-        "icao": "MNU",
-        "name": "Elite Airways"
+        "icao": "AUV",
+        "name": "FlyOne Asia"
     },
     {
         "iata": "7R",
@@ -733,8 +734,8 @@
     },
     {
         "iata": "7Z",
-        "icao": "HCV",
-        "name": "Halcyonair"
+        "icao": "EZR",
+        "name": "Z Air"
     },
     {
         "iata": "8A",
@@ -877,7 +878,8 @@
     },
     {
         "iata": "9G",
-        "name": "9G Rail"
+        "icao": "SPQ",
+        "name": "Sun PhuQuoc Airways"
     },
     {
         "iata": "9H",
@@ -1482,13 +1484,8 @@
     },
     {
         "iata": "BV",
-        "icao": "BPA",
-        "name": "Blue Panorama Airlines"
-    },
-    {
-        "iata": "4V",
-        "icao": "BVI",
-        "name": "BVI Airways"
+        "icao": "TOK",
+        "name": "Toki Air"
     },
     {
         "iata": "LB",
@@ -1536,8 +1533,8 @@
     },
     {
         "iata": "C6",
-        "icao": "CJA",
-        "name": "CanJet Airlines"
+        "icao": "MFX",
+        "name": "Centrum Air"
     },
     {
         "iata": "C7",
@@ -3001,11 +2998,6 @@
     },
     {
         "iata": "J4",
-        "icao": "BFL",
-        "name": "Buffalo Airways"
-    },
-    {
-        "iata": "J4",
         "icao": "BDR",
         "name": "Badr Airlines"
     },
@@ -3400,8 +3392,8 @@
     },
     {
         "iata": "KS",
-        "icao": "KON",
-        "name": "Air Connect"
+        "icao": "FHS",
+        "name": "FlyJaya"
     },
     {
         "iata": "KT",
@@ -3562,8 +3554,8 @@
     },
     {
         "iata": "S5",
-        "icao": "LLC",
-        "name": "Small Planet Airlines"
+        "icao": "SDG",
+        "name": "Star Air"
     },
     {
         "iata": "P7",
@@ -3836,8 +3828,8 @@
     },
     {
         "iata": "MN",
-        "icao": "CAW",
-        "name": "Comair"
+        "icao": "KGN",
+        "name": "Asman Airlines"
     },
     {
         "iata": "M0",
@@ -3886,8 +3878,8 @@
     },
     {
         "iata": "MW",
-        "icao": "MHO",
-        "name": "Mokulele Airlines"
+        "icao": "MAY",
+        "name": "Malta Air"
     },
     {
         "iata": "WV",
@@ -4290,7 +4282,7 @@
     {
         "iata": "OW",
         "icao": "SEW",
-        "name": "Skyward Express"
+        "name": "Skyward Airlines"
     },
     {
         "iata": "OX",
@@ -4706,8 +4698,8 @@
     },
     {
         "iata": "R4",
-        "icao": "RLB",
-        "name": "RUS Aviation"
+        "icao": "RAN",
+        "name": "Rano Air"
     },
     {
         "iata": "R6",
@@ -4895,8 +4887,8 @@
     },
     {
         "iata": "RX",
-        "icao": "RGE",
-        "name": "Regent Airways"
+        "icao": "RXI",
+        "name": "Riyadh Air"
     },
     {
         "iata": "RY",
@@ -4927,11 +4919,6 @@
         "iata": "S4",
         "icao": "RZO",
         "name": "Azores Airlines"
-    },
-    {
-        "iata": "S5",
-        "icao": "TCF",
-        "name": "Shuttle America"
     },
     {
         "iata": "S6",
@@ -6054,13 +6041,8 @@
     },
     {
         "iata": "WE",
-        "icao": "CWC",
-        "name": "Centurion Cargo"
-    },
-    {
-        "iata": "WE",
-        "icao": "THD",
-        "name": "Thai Smile"
+        "icao": "PTA",
+        "name": "Parata Air"
     },
     {
         "iata": "WR",
@@ -6297,8 +6279,8 @@
     },
     {
         "iata": "XZ",
-        "icao": "EXY",
-        "name": "South African Express"
+        "icao": "AEZ",
+        "name": "Aeroitalia"
     },
     {
         "iata": "Y2",
