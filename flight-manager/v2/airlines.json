@@ -2536,11 +2536,6 @@
         "name": "Jet Asia Airways"
     },
     {
-        "iata": "JO",
-        "icao": "JTD",
-        "name": "Jet Time"
-    },
-    {
         "iata": "JG",
         "icao": "JGO",
         "name": "JetGo Australia"
@@ -2577,8 +2572,8 @@
     },
     {
         "iata": "JP",
-        "icao": "ADR",
-        "name": "Adria Airways"
+        "icao": "JTD",
+        "name": "Jet Time"
     },
     {
         "iata": "JQ",
@@ -3097,6 +3092,16 @@
         "iata": "MYX",
         "icao": "MYX",
         "name": "SmartLynx Airlines Estonia"
+    },
+    {
+        "iata": "ATV",
+        "icao": "ATV",
+        "name": "Avanti Air"
+    },
+    {
+        "iata": "RVP",
+        "icao": "RVP",
+        "name": "Sevenair Air Services"
     },
     {
         "iata": "MX",
