@@ -1,0 +1,52 @@
+---
+import '@fontsource-variable/inter';
+import '@fontsource-variable/sora';
+import Base from '../layouts/Base.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+---
+
+<Base title="Page not found · Studio Bridoux" description="This page doesn't exist.">
+  <SiteHeader />
+  <main class="container">
+    <h1>Lost at the gate?</h1>
+    <p>This page doesn't exist, or it has moved.</p>
+    <a href="/" class="btn">Back to Studio Bridoux</a>
+  </main>
+  <SiteFooter />
+</Base>
+
+<style>
+  main {
+    min-height: 60vh;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    font-family: var(--display);
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    margin: 0;
+    font-size: 18px;
+    color: var(--muted);
+  }
+
+  .btn {
+    background: #0b2a66;
+    color: #ffffff;
+  }
+
+  .btn:hover {
+    background: #1d4ed8;
+    color: #ffffff;
+  }
+</style>

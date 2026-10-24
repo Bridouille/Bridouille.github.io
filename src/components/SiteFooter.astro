@@ -1,0 +1,93 @@
+---
+import { apps } from '../data/site';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container inner">
+    <div class="top">
+      <div class="about">
+        <span class="name">Studio Bridoux AB</span>
+        <span>Android apps made in Stockholm, Sweden.</span>
+      </div>
+      <nav aria-label="Apps">
+        <span class="eyebrow">Apps</span>
+        {Object.values(apps).map((app) => <a href={app.href}>{app.name}</a>)}
+      </nav>
+    </div>
+    <div class="bottom">
+      <span>© {year} Studio Bridoux AB</span>
+      <span>Made with Kotlin and fika.</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: #0b2a66;
+    color: #dce6f7;
+  }
+
+  .inner {
+    padding-top: 56px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1 1 260px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .name {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 0 1 200px;
+  }
+
+  nav .eyebrow {
+    color: #93c5fd;
+  }
+
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  nav a:hover {
+    color: #93c5fd;
+  }
+
+  .bottom {
+    border-top: 1px solid #1f4285;
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+</style>

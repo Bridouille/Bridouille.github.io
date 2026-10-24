@@ -1,0 +1,44 @@
+---
+import { contactEmail } from '../data/site';
+
+interface Props {
+  appName: string;
+  privacy: string;
+}
+
+const { appName, privacy } = Astro.props;
+---
+
+<footer class="app-footer">
+  <div class="container inner">
+    <span>{appName} by <a href="/">Studio Bridoux AB</a></span>
+    <div class="links">
+      <a href={privacy}>Privacy policy</a>
+      <a href={`mailto:${contactEmail}`}>Contact</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .app-footer {
+    border-top: 1px solid var(--border);
+  }
+
+  .inner {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: var(--subtle);
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+</style>

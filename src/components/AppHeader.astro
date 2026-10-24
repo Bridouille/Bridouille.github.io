@@ -1,0 +1,66 @@
+---
+interface Props {
+  play: string;
+}
+
+const { play } = Astro.props;
+---
+
+<header class="app-header">
+  <div class="container bar">
+    <a href="/" class="back">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+      Studio Bridoux
+    </a>
+    <a href={play} class="btn play">Get it on Google Play</a>
+  </div>
+</header>
+
+<style>
+  .app-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--header-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .bar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .back {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .back:hover {
+    color: var(--text);
+  }
+
+  .play {
+    padding: 11px 18px;
+    background: var(--accent);
+    color: var(--on-accent);
+    white-space: nowrap;
+  }
+
+  .play:hover {
+    color: var(--on-accent);
+    opacity: 0.9;
+  }
+</style>

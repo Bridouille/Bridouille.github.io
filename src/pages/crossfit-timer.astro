@@ -1,0 +1,380 @@
+---
+import '@fontsource-variable/inter';
+import '@fontsource/barlow-condensed/600.css';
+import '@fontsource/barlow-condensed/700.css';
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import AppHeader from '../components/AppHeader.astro';
+import AppFooter from '../components/AppFooter.astro';
+import Phone from '../components/Phone.astro';
+import { apps } from '../data/site';
+
+import icon from '../assets/crossfit-timer/icon.png';
+import home from '../assets/crossfit-timer/home.jpg';
+import emom from '../assets/crossfit-timer/emom.jpg';
+import amrap from '../assets/crossfit-timer/amrap.jpg';
+import amrapSummary from '../assets/crossfit-timer/amrap-summary.jpg';
+import wearEmom from '../assets/crossfit-timer/wear-emom.png';
+
+const app = apps.crossfitTimer;
+const modes = [
+  { name: 'For Time', color: '#9DB8F5', text: 'A stopwatch to your time cap. Log rounds in one tap and see your splits.' },
+  { name: 'AMRAP', color: '#9DB8F5', text: 'A countdown with a round counter, so you never lose track. No more poker chips.' },
+  { name: 'EMOM', color: '#9DB8F5', text: 'A new round every interval: every minute, every 2 minutes, every 90 seconds.' },
+  { name: 'Tabata', color: '#7FD3A0', text: 'The classic 20/10 × 8 in one tap, or your own work and rest intervals.' },
+  { name: 'Custom', color: '#FFFFFF', text: 'Chain blocks in any order, repeat them in sets and save the workout for later.' },
+];
+const strip = [
+  { src: home, alt: 'Home screen with timer modes and history' },
+  { src: amrap, alt: 'AMRAP timer' },
+  { src: emom, alt: 'EMOM timer' },
+  { src: amrapSummary, alt: 'AMRAP workout summary' },
+];
+---
+
+<Base
+  title="CrossFit Timer · Studio Bridoux"
+  description="A WOD timer for For Time, AMRAP, EMOM, Tabata and custom workouts, with huge digits you can read from across the box. On Android phones, tablets and Wear OS."
+  theme="timer"
+>
+  <AppHeader play={app.play} />
+
+  <main>
+    <section class="container hero">
+      <div class="hero-text">
+        <div class="app-name">
+          <Image src={icon} alt="" width={56} height={56} densities={[1, 2]} loading="eager" />
+          <span>CrossFit Timer</span>
+        </div>
+        <h1>A timer for <span class="accent">every WOD.</span></h1>
+        <p class="lead">
+          Huge, high-contrast digits you can read from across the box, a clean design, and every workout format in one
+          app. Built for CrossFit, great for HIIT, running intervals and timing your rest.
+        </p>
+        <div class="actions">
+          <a href={app.play} class="btn btn-play">Get it on Google Play</a>
+          <a href={app.privacy} class="privacy">Privacy policy</a>
+        </div>
+      </div>
+      <div class="hero-phones">
+        <Phone src={amrap} alt="AMRAP countdown with round counter" class="tilted" eager />
+        <Phone src={emom} alt="EMOM timer showing round 7 of 20" class="glow" eager />
+      </div>
+    </section>
+
+    <section class="modes">
+      <div class="container modes-inner">
+        <h2>Five modes, one app</h2>
+        <div class="mode-grid">
+          {
+            modes.map((mode) => (
+              <div class="mode">
+                <span class="mode-name" style={`color: ${mode.color}`}>{mode.name}</span>
+                <p>{mode.text}</p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="container screens">
+      <div class="screens-intro">
+        <h2>Made to be seen from far away</h2>
+        <p>Huge digits in portrait and landscape, on phones and tablets, with a summary of every workout when you're done.</p>
+      </div>
+      <div class="strip">
+        {strip.map((shot) => <Phone src={shot.src} alt={shot.alt} />)}
+      </div>
+    </section>
+
+    <section class="container wear-section">
+      <div class="wear">
+        <div class="watch">
+          <Image src={wearEmom} alt="EMOM timer on a Wear OS watch" />
+        </div>
+        <div class="wear-text">
+          <span class="eyebrow">Wear OS</span>
+          <h2>On your wrist too</h2>
+          <p>Follow the clock and your rounds from your watch while the phone stays on the floor.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <AppFooter appName={app.name} privacy={app.privacy} />
+</Base>
+
+<style>
+  main {
+    --phone-border: #2a2f3a;
+  }
+
+  h1,
+  h2 {
+    margin: 0;
+    font-family: var(--display);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .hero-text {
+    flex: 1 1 460px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .app-name {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .app-name :global(img) {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+  }
+
+  h1 {
+    font-size: clamp(3.5rem, 8vw, 6.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+  }
+
+  .accent {
+    color: var(--accent);
+  }
+
+  .lead {
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--muted);
+    max-width: 32rem;
+  }
+
+  .btn-play {
+    padding: 14px 24px;
+    font-size: 16px;
+    background: var(--accent);
+    color: var(--on-accent);
+  }
+
+  .btn-play:hover {
+    background: var(--link-hover);
+    color: var(--on-accent);
+  }
+
+  .privacy {
+    padding: 14px 8px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .hero-phones {
+    flex: 1 1 420px;
+    min-width: 0;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    --phone-radius: 26px;
+  }
+
+  .hero-phones :global(.phone) {
+    width: 46%;
+    max-width: 250px;
+  }
+
+  .hero-phones :global(.tilted) {
+    margin-top: 56px;
+    transform: rotate(-4deg);
+  }
+
+  .hero-phones :global(.glow) {
+    box-shadow: 0 32px 80px rgba(157, 184, 245, 0.18);
+  }
+
+  .modes {
+    background: #15181f;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .modes-inner {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  h2 {
+    font-size: clamp(2.25rem, 4vw, 3.25rem);
+    letter-spacing: 0.01em;
+    line-height: 1;
+  }
+
+  .mode-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+
+  .mode {
+    background: #1c2029;
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mode-name {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+
+  .mode p {
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+
+  .screens {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .screens-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 36rem;
+  }
+
+  .screens-intro p,
+  .wear-text p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+  .strip {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .strip :global(.phone) {
+    width: 220px;
+    scroll-snap-align: start;
+  }
+
+  .wear-section {
+    padding-bottom: 88px;
+  }
+
+  .wear {
+    background: #1c2029;
+    border-radius: 28px;
+    padding: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .watch {
+    flex: none;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #2a2f3a;
+    background: #000000;
+  }
+
+  .watch :global(img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .wear-text {
+    flex: 1 1 360px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .wear-text .eyebrow {
+    color: var(--accent);
+  }
+
+  .wear-text h2 {
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+  }
+
+  @media (max-width: 640px) {
+    .hero {
+      padding-top: 24px;
+      padding-bottom: 64px;
+    }
+
+    .modes-inner,
+    .screens {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .hero-phones {
+      gap: 16px;
+    }
+
+    .hero-phones :global(.tilted) {
+      margin-top: 36px;
+    }
+
+    .strip :global(.phone) {
+      width: 180px;
+    }
+
+    .wear {
+      padding: 32px 24px;
+      gap: 32px;
+    }
+
+    .watch {
+      width: 200px;
+      height: 200px;
+    }
+  }
+</style>

@@ -1,0 +1,426 @@
+---
+import '@fontsource-variable/roboto';
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import AppHeader from '../components/AppHeader.astro';
+import AppFooter from '../components/AppFooter.astro';
+import Phone from '../components/Phone.astro';
+import { apps } from '../data/site';
+
+import icon from '../assets/heartrate-monitor/icon.png';
+import home from '../assets/heartrate-monitor/home.jpg';
+import live from '../assets/heartrate-monitor/live.jpg';
+import summary from '../assets/heartrate-monitor/summary.jpg';
+
+const app = apps.heartrateMonitor;
+const features = [
+  {
+    title: 'Live zones',
+    text: 'Your heart rate in the color of its zone, a bar that zooms on where you are, and a live chart of the last minutes.',
+  },
+  {
+    title: 'Your zones, your way',
+    text: 'From your max heart rate or your heart rate reserve (Karvonen). No max yet? Estimate it from your age.',
+  },
+  {
+    title: 'As you go',
+    text: 'Time in each zone, average and max heart rate, calories, and beat-to-beat HRV from chest straps that send it.',
+  },
+];
+const sensors = ['Polar H10, H9, OH1, Verity Sense', 'Garmin HRM-Pro, HRM-Dual', 'Wahoo TICKR', 'Garmin and COROS watches'];
+---
+
+<Base
+  title="Heart Rate Monitor · Studio Bridoux"
+  description="Connect your Bluetooth chest strap, armband or watch and see your heart rate zone second by second. No account, and your health data stays on your phone."
+  theme="heart"
+>
+  <AppHeader play={app.play} />
+
+  <main>
+    <section class="container hero">
+      <div class="hero-text">
+        <div class="app-name">
+          <Image src={icon} alt="" width={56} height={56} densities={[1, 2]} loading="eager" />
+          <span>Heart Rate Monitor</span>
+        </div>
+        <h1>Your heart rate, <span class="accent">in zones.</span></h1>
+        <p class="lead">
+          Connect your Bluetooth chest strap, armband or watch and see which zone you're in, second by second, in numbers
+          you can read from across the room. No account, no extra app.
+        </p>
+        <div class="actions">
+          <a href={app.play} class="btn btn-play">Get it on Google Play</a>
+          <a href={app.privacy} class="privacy">Privacy policy</a>
+        </div>
+      </div>
+      <div class="hero-phones">
+        <Phone src={live} alt="Live heart rate of 157 bpm in zone 4 with a zone chart" statusBar class="glow" eager />
+        <Phone src={home} alt="Home screen with the connected sensor" statusBar class="offset" eager />
+      </div>
+    </section>
+
+    <section class="container features-section">
+      <div class="zones" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="features">
+        {
+          features.map((feature) => (
+            <div class="feature">
+              <h3>{feature.title}</h3>
+              <p>{feature.text}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="after">
+      <div class="container after-inner">
+        <div class="after-phone">
+          <Phone src={summary} alt="Workout summary with heart rate chart and time in zones" statusBar />
+        </div>
+        <div class="after-text">
+          <span class="eyebrow">After your workout</span>
+          <h2>See how hard you really worked.</h2>
+          <ul>
+            <li>Heart rate recovery in the minute after you stop</li>
+            <li>A workout chart you can pinch to zoom, down to every second</li>
+            <li>Intervals found for you, with time in zones for each</li>
+            <li>Share a workout card with friends in one tap</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container panels">
+      <div class="panel sensors">
+        <h2>Works with your sensor</h2>
+        <p>
+          Any sensor using the standard Bluetooth heart rate profile. The app finds the one you're wearing, shows its
+          battery and reconnects on its own.
+        </p>
+        <ul class="chips">
+          {sensors.map((sensor) => <li>{sensor}</li>)}
+        </ul>
+      </div>
+      <div class="panel privacy-panel">
+        <h2>Stays on your phone</h2>
+        <p>Your heart rate, workouts and profile are stored on your phone only. No account, and your health data is never shared.</p>
+        <a href={app.privacy}>Read the privacy policy</a>
+      </div>
+    </section>
+  </main>
+
+  <AppFooter appName={app.name} privacy={app.privacy} />
+</Base>
+
+<style>
+  main {
+    --phone-border: #26303a;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    font-family: var(--display);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 88px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .hero-text {
+    flex: 1 1 460px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .app-name {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .app-name :global(img) {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+  }
+
+  h1 {
+    font-weight: 900;
+    font-size: clamp(3rem, 6.5vw, 5.25rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .accent {
+    color: #edbe8f;
+  }
+
+  .lead {
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--muted);
+    max-width: 32rem;
+  }
+
+  .btn-play {
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    background: var(--accent);
+    color: var(--on-accent);
+  }
+
+  .btn-play:hover {
+    background: #ffffff;
+    color: var(--on-accent);
+  }
+
+  .privacy {
+    padding: 14px 8px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .hero-phones {
+    flex: 1 1 420px;
+    min-width: 0;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    --phone-radius: 26px;
+  }
+
+  .hero-phones :global(.phone) {
+    width: 46%;
+    max-width: 250px;
+  }
+
+  .hero-phones :global(.glow) {
+    box-shadow: 0 32px 80px rgba(237, 190, 143, 0.14);
+  }
+
+  .hero-phones :global(.offset) {
+    margin-top: 56px;
+  }
+
+  .features-section {
+    padding-bottom: 88px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .zones {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .zones span {
+    height: 12px;
+    border-radius: 6px;
+  }
+
+  .zones span:nth-child(1) {
+    background: #8e9ba8;
+  }
+
+  .zones span:nth-child(2) {
+    background: #3b82c8;
+  }
+
+  .zones span:nth-child(3) {
+    background: #2ea35a;
+  }
+
+  .zones span:nth-child(4) {
+    background: #e08a1e;
+  }
+
+  .zones span:nth-child(5) {
+    background: #d9403a;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
+
+  .feature,
+  .panel {
+    background: #161d23;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature {
+    border-radius: 20px;
+    padding: 24px;
+    gap: 8px;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .feature p {
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+
+  .after {
+    background: #141a20;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .after-inner {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 56px;
+    align-items: center;
+  }
+
+  .after-phone {
+    flex: 1 1 320px;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .after-phone :global(.phone) {
+    width: 70%;
+    max-width: 280px;
+    --phone-radius: 28px;
+  }
+
+  .after-text {
+    flex: 1 1 460px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .after-text .eyebrow {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: #edbe8f;
+  }
+
+  h2 {
+    font-weight: 900;
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    line-height: 1.1;
+  }
+
+  .after-text ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+
+  .panels {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .panel {
+    min-width: 0;
+    border-radius: 28px;
+    padding: 40px;
+    gap: 16px;
+  }
+
+  .panel h2 {
+    font-size: 30px;
+  }
+
+  .panel p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+  .sensors {
+    flex: 1 1 460px;
+  }
+
+  .sensors .chips li {
+    padding: 8px 14px;
+    background: #222c34;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .privacy-panel {
+    flex: 1 1 360px;
+  }
+
+  .privacy-panel a {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  @media (max-width: 640px) {
+    .hero {
+      padding-top: 24px;
+      padding-bottom: 64px;
+    }
+
+    .hero-phones {
+      gap: 16px;
+    }
+
+    .hero-phones :global(.offset) {
+      margin-top: 36px;
+    }
+
+    .features-section {
+      padding-bottom: 64px;
+    }
+
+    .after-inner,
+    .panels {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .panel {
+      padding: 28px 24px;
+    }
+  }
+</style>

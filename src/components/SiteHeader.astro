@@ -1,0 +1,90 @@
+---
+import Logo from './Logo.astro';
+import { contactEmail } from '../data/site';
+---
+
+<header class="site-header">
+  <div class="container bar">
+    <a href="/" class="brand">
+      <Logo size={40} class="logo" />
+      <span class="brand-name">Studio Bridoux</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="/#apps" class="nav-link">Apps</a>
+      <a href="/#about" class="nav-link">About</a>
+      <a href={`mailto:${contactEmail}`} class="btn say-hi">Say hi</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--header-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .bar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  .brand :global(.logo) {
+    border-radius: 10px;
+    flex: none;
+  }
+
+  .brand-name {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  nav {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .nav-link {
+    padding: 12px 14px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .say-hi {
+    padding: 11px 18px;
+    background: #0b2a66;
+    color: #ffffff;
+    white-space: nowrap;
+  }
+
+  .say-hi:hover {
+    background: #1d4ed8;
+    color: #ffffff;
+  }
+
+  @media (max-width: 520px) {
+    .brand-name {
+      display: none;
+    }
+  }
+</style>
