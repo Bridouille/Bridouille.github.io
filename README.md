@@ -48,19 +48,25 @@ If `npm run build` works on your computer, it will work on GitHub.
 | Top bars, footers, phone frame, logo | `src/components/` | |
 | Page shell (`<head>`, favicon, theme colors) | `src/layouts/Base.astro`, `src/styles/global.css` | |
 | Files served exactly as they are | `public/` | same path as in the folder |
+| Flight Pass data | `flight-manager/` | `/flight-manager/...` |
 
 **Every file in `src/pages/` becomes a page, and its file name is its URL.** For example,
 `src/pages/foo-privacy-policy.md` is served at `/foo-privacy-policy/`.
 
 **Everything in `public/` is copied as is.** That's where these live, at the same URLs as before:
 
-- `public/flight-manager/`, the Flight Pass airports, airlines, aircraft JSON and images. For example,
-  `public/flight-manager/v2/airports.json` is `https://bridouille.github.io/flight-manager/v2/airports.json`.
 - `public/app-ads.txt`
 - `public/googled66975d7224f5af9.html`, the Google site verification file
 - the favicons and `og-image.png`
 
 Never rename or move files in `public/`: apps and Google request them by these exact paths.
+
+**`flight-manager/` must stay at the root of the repo.** It holds the Flight Pass airports, airlines, aircraft JSON and
+images, and the app downloads them from GitHub by their path in this repo, for example
+`https://raw.githubusercontent.com/Bridouille/Bridouille.github.io/master/flight-manager/v2/airports.json`. The airline
+logos and aircraft photos are loaded the same way. Moving the folder breaks every released version of the app. The
+build also copies it into the site, so `https://bridouille.github.io/flight-manager/v2/airports.json` works too
+(`astro.config.mjs`).
 
 ## Common tasks
 
@@ -116,7 +122,7 @@ Edit `src/data/site.ts`. Every page uses the links from there.
 
 ### Update the Flight Pass data
 
-Replace the files in `public/flight-manager/`, keeping the same names and folders, then push.
+Replace the files in `flight-manager/`, keeping the same names and folders, then push.
 
 ## Publishing
 
