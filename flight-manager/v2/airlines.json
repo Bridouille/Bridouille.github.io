@@ -536,8 +536,8 @@
     },
     {
         "iata": "7Z",
-        "icao": "AJI",
-        "name": "Ameristar Jet Charter"
+        "icao": "EZR",
+        "name": "Z Air"
     },
     {
         "iata": "8A",
@@ -2876,7 +2876,7 @@
     {
         "iata": "OD",
         "icao": "MXD",
-        "name": "Malindo Air"
+        "name": "Batik Air Malaysia"
     },
     {
         "iata": "6M",
@@ -3129,7 +3129,7 @@
     {
         "iata": "ON",
         "icao": "RON",
-        "name": "Our Airline"
+        "name": "Nauru Airlines"
     },
     {
         "iata": "IP",
